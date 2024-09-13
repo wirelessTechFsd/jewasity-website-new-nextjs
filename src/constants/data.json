@@ -1,0 +1,108 @@
+{
+    "cardsData": [
+        {
+            "id": 1,
+            "title": "Weekend Weather: Clouds, Wind, and Rain",
+            "imgSrc": "/images/dummy1.png",
+            "date": "Apr 12 2024 | 9:58 AM"
+        },
+        {
+            "id": 2,
+            "title": "Photo Gallery: Bobov-45 Rebbe at the Rosh Choidesh Tish for the Bucherim",
+            "imgSrc": "/images/dummy2.png",
+            "date": "Apr 12 2024 | 9:58 AM"
+        },
+        {
+            "id": 3,
+            "title": "Photo Gallery: Bluzhev Rebbe visits the Belz Rov",
+            "imgSrc": "/images/dummy3.png",
+            "date": "Apr 12 2024 | 9:58 AM"
+        },
+        {
+            "id": 4,
+            "title": "Photo Gallery: Bar Mitzvah in courts of Skulen and Chernobile",
+            "imgSrc": "/images/dummy4.png",
+            "date": "Apr 12 2024 | 9:58 AM"
+        },
+        {
+            "id": 5,
+            "title": "Weekend Weather: Clouds, Wind, and Rain",
+            "imgSrc": "/images/dummy5.png",
+            "date": "Apr 12 2024 | 9:58 AM"
+        },
+        {
+            "id": 6,
+            "title": "Photo Gallery: Bobov-45 Rebbe at the Rosh Choidesh Tish for the Bucherim",
+            "imgSrc": "/images/dummy6.png",
+            "date": "Apr 12 2024 | 9:58 AM"
+        },
+        {
+            "id": 7,
+            "title": "Weekend Weather: Clouds, Wind, and Rain",
+            "imgSrc": "/images/dummy7.png",
+            "date": "Apr 12 2024 | 9:58 AM"
+        },
+        {
+            "id": 8,
+            "title": "Photo Gallery: Bobov-45 Rebbe at the Rosh Choidesh Tish for the Bucherim",
+            "imgSrc": "/images/dummy8.png",
+            "date": "Apr 12 2024 | 9:58 AM"
+        },
+        {
+            "id": 9,
+            "title": "Photo Gallery: Bluzhev Rebbe visits the Belz Rov",
+            "imgSrc": "/images/dummy9.png",
+            "date": "Apr 12 2024 | 9:58 AM"
+        },
+        {
+            "id": 10,
+            "title": "Photo Gallery: Bar Mitzvah in courts of Skulen and Chernobile",
+            "imgSrc": "/images/dummy10.png",
+            "date": "Apr 12 2024 | 9:58 AM"
+        },
+        {
+            "id": 11,
+            "title": "Weekend Weather: Clouds, Wind, and Rain",
+            "imgSrc": "/images/dummy11.png",
+            "date": "Apr 12 2024 | 9:58 AM"
+        },
+        {
+            "id": 12,
+            "title": "Photo Gallery: Bobov-45 Rebbe at the Rosh Choidesh Tish for the Bucherim",
+            "imgSrc": "/images/dummy12.png",
+            "date": "Apr 12 2024 | 9:58 AM"
+        }
+    ],
+    "cardData2": [
+        {
+            "id": 1,
+            "title": "Photo Gallery: Bobov-45 Rebbe at the Rosh Choidesh Tish for the Bucherim",
+            "imgSrc": "/images/dummy14.png",
+            "date": "Apr 12 2024 | 9:58 AM"
+        },
+        {
+            "id": 2,
+            "title": "Photo Gallery: Bobov-45 Rebbe at the Rosh Choidesh Tish for the Bucherim",
+            "imgSrc": "/images/dummy15.png",
+            "date": "Apr 12 2024 | 9:58 AM"
+        },
+        {
+            "id": 3,
+            "title": "Photo Gallery: Bobov-45 Rebbe at the Rosh Choidesh Tish for the Bucherim",
+            "imgSrc": "/images/dummy15.png",
+            "date": "Apr 12 2024 | 9:58 AM"
+        },
+        {
+            "id": 4,
+            "title": "Photo Gallery: Bobov-45 Rebbe at the Rosh Choidesh Tish for the Bucherim",
+            "imgSrc": "/images/dummy16.png",
+            "date": "Apr 12 2024 | 9:58 AM"
+        },
+        {
+            "id": 5,
+            "title": "Photo Gallery: Bobov-45 Rebbe at the Rosh Choidesh Tish for the Bucherim",
+            "imgSrc": "/images/dummy13.png",
+            "date": "Apr 12 2024 | 9:58 AM"
+        }
+    ]
+}

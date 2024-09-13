@@ -1,0 +1,31 @@
+<svg id="Group_66" data-name="Group 66" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56.56" height="56.56" viewBox="0 0 56.56 56.56">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.555" y1="-0.108" x2="0.161" y2="0.854" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffe185"/>
+      <stop offset="0.001" stop-color="#ffe185"/>
+      <stop offset="0.209" stop-color="#ffbb36"/>
+      <stop offset="0.376" stop-color="#ff5176"/>
+      <stop offset="0.524" stop-color="#f63395"/>
+      <stop offset="0.739" stop-color="#a436d2"/>
+      <stop offset="1" stop-color="#5f4eed"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_138" data-name="Rectangle 138" width="56.56" height="56.56" rx="12" fill="url(#linear-gradient)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_139" data-name="Rectangle 139" width="56.56" height="56.56" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_75" data-name="Group 75" transform="translate(0 0)">
+    <g id="Group_74" data-name="Group 74" clip-path="url(#clip-path)">
+      <rect id="Rectangle_137" data-name="Rectangle 137" width="79.988" height="79.988" transform="translate(-28.28 28.28) rotate(-45)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+  <g id="Group_77" data-name="Group 77" transform="translate(0 0)">
+    <g id="Group_76" data-name="Group 76" clip-path="url(#clip-path-2)">
+      <path id="Path_21" data-name="Path 21" d="M31.22,15.216a1.865,1.865,0,1,0,1.864,1.864,1.864,1.864,0,0,0-1.864-1.864" transform="translate(5.48 2.84)" fill="#fff"/>
+      <path id="Path_22" data-name="Path 22" d="M25.174,17.231a7.833,7.833,0,1,0,7.833,7.833,7.842,7.842,0,0,0-7.833-7.833m0,12.85a5.017,5.017,0,1,1,5.017-5.017,5.023,5.023,0,0,1-5.017,5.017" transform="translate(3.237 3.216)" fill="#fff"/>
+      <path id="Path_23" data-name="Path 23" d="M32.682,42.236h-12.7a9.564,9.564,0,0,1-9.554-9.554v-12.7a9.565,9.565,0,0,1,9.554-9.554h12.7a9.565,9.565,0,0,1,9.554,9.554v12.7a9.564,9.564,0,0,1-9.554,9.554m-12.7-28.813a6.568,6.568,0,0,0-6.561,6.561v12.7a6.569,6.569,0,0,0,6.561,6.562h12.7a6.569,6.569,0,0,0,6.561-6.562v-12.7a6.568,6.568,0,0,0-6.561-6.561Z" transform="translate(1.947 1.947)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

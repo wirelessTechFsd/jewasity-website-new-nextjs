@@ -1,0 +1,36 @@
+{
+    "blogTitle": "Weekly Weather: Clouds and Rain With a Chance of Sunshine",
+    "publisedDate": "Apr 12 2024 | 9:58 AM",
+    "blogImage": "/images/details.png",
+    "blogDescription": "Today will bring a mix of clouds and sun in the morning, with clouds and a slight chance of rain later in the day and into the night. The temperature will be slightly warmer at 66 degrees.<br/><br/> Monday will be partly cloudy during the day with clear skies at night, with the temperature at 69 degrees during the way and 49 degrees at night.",
+    "shareLinks": {
+        "facebook": {
+            "link": "#",
+            "icon": "/icons/fb.svg"
+        },
+        "instagram": {
+            "link": "#",
+            "icon": "/icons/ig.svg"
+        },
+        "twitter": {
+            "link": "#",
+            "icon": "/icons/x.svg"
+        },
+        "linkedIn": {
+            "link": "#",
+            "icon": "/icons/linkedIn.svg"
+        },
+        "t": {
+            "link": "#",
+            "icon": "/icons/telegrm.svg"
+        },
+        "whatsapp": {
+            "link": "#",
+            "icon": "/icons/whatsapp.svg"
+        }
+    },
+    "blogVideos": [
+        "https://jewasity-dev.s3.amazonaws.com/4620563-hd_1080_2048_25fps+%281%294620563-hd_1080_2048_25fps+%281%294620563-hd_1080_2048_25fps+%281%294620563-hd_1080_2048_25fps+%281%294620563-hd_1080_2048_25fps+%281%294620563-hd_1080_2048_25fps+%281%294620563-hd_1080_2048_25fps+%281%294620563-hd_102463-video.mp4"
+
+    ]
+}
