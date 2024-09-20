@@ -39,7 +39,7 @@ import MediaModal from "../commonComponents/mediaModal/MediaModal";
 import SEO from "../commonComponents/SEO";
 import { useRouter } from "next/navigation";
 
-const Details = ({blogId}) => {
+const Details = ({ blogId }) => {
   const playerRef = useRef(null);
   const { blogs, loading, recentBlogs, randomAds } = useSelector(
     (state) => state.blog
@@ -70,7 +70,7 @@ const Details = ({blogId}) => {
   const { width, height } = UseWindowDimensions();
   // const location = useLocation();
   // const location = router.prefetch();
-  console.log("🚀 ~ Details ~ location:", location)
+  console.log("🚀 ~ Details ~ location:", location);
   const playerRefs = useRef([]);
   const [videoStates, setVideoStates] = useState({});
   const [comment, setComment] = useState({
@@ -805,9 +805,9 @@ const AllComments = ({ isSmall, comments }) => {
         </div>
 
         <div>
-          {comments?.map((commentData) => {
+          {comments?.map((commentData, i) => {
             return (
-              <div class="space-y-4">
+              <div key={i} class="space-y-4">
                 <div class=" py-4  border-b-[1.5px] border-solid border-[#ced1d4]">
                   <div class="flex items-center mb-2">
                     <div>
@@ -902,6 +902,7 @@ const AdsSection = ({ randomAds, start, end }) => {
       {randomAds?.slice(start, end)?.map((ad, i) => {
         return (
           <div
+            key={i}
             className=" bg-[#000] flex items-center justify-center mb-[27.7px]"
             onClick={() => window.open(`${ad?.link}`, "_blank")}
           >

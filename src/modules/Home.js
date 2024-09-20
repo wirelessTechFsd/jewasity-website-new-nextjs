@@ -485,9 +485,10 @@ export default function Home() {
         <div className="mt-[28px] grid xs:grid-cols-1  sm:grid-cols-2 md:grid-cols-3 grid-cols-6 gap-x-[33.2px] mb-7">
           {loading ? (
             <>
-              {[1, 2, 3, 4, 5, 6].map((item) => {
+              {[1, 2, 3, 4, 5, 6].map((item, i) => {
                 return (
                   <div
+                    key={i}
                     className={
                       '"w-[100%] min-h-[450px] relative border-b-2  pb-[44.5px] mb-[50px]"'
                     }
@@ -586,9 +587,10 @@ export default function Home() {
         <div className="mt-[120px]">
           {blogLoading ? (
             <>
-              {[1, 2, 3, 4, 5].map((item) => {
+              {[1, 2, 3, 4, 5].map((item, i) => {
                 return (
                   <div
+                    key={i}
                     className={
                       '"w-[100%] min-h-[450px] relative border-b-2  pb-[44.5px] mb-[50px]"'
                     }

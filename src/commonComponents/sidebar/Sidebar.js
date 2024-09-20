@@ -14,7 +14,7 @@ export default function Sidebar({
   navigateToMusic,
   navigateToHome,
   navigateToNews,
-  navigateToPeeks
+  navigateToPeeks,
 }) {
   const [query, setQuery] = useState("");
   const [debouncedQuery, setDebouncedQuery] = useState(query);
@@ -74,7 +74,7 @@ export default function Sidebar({
               />
               <img src="/icons/search.svg" />
             </div> */}
-            <SearchDropdown setSidebarOpen={setSidebarOpen}/>
+            <SearchDropdown setSidebarOpen={setSidebarOpen} />
           </div>
           <div
             className="flex items-center justify-start gap-[6.9px] xl:hidden 2xl:hidden lg:hidden ml-4"
@@ -110,8 +110,9 @@ export default function Sidebar({
             <div className="flex flex-col justify-start items-start gap-3  ml-8">
               {Object.keys(blogsByCategory)
                 .filter((category) => category !== "Uncategorized")
-                .map((option) => (
+                .map((option, i) => (
                   <p
+                    key={i}
                     className="font-dmSans text-grey-dark opacity-[0.39] font-medium text-[20px] cursor-pointer"
                     onClick={() => {
                       navigateToNews(option);
@@ -138,7 +139,7 @@ export default function Sidebar({
           >
             <img src="/icons/music-note-beamed.svg" />
             <p className="font-dmSans text-grey-dark opacity-[0.39] font-medium text-[20px]">
-            Influencity
+              Influencity
             </p>
           </div>
           <div

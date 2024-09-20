@@ -206,9 +206,10 @@ export default function Influasity() {
 
       {loading ? (
         <>
-          {[1, 2, 3, 4, 5, 6].map((item) => {
+          {[1, 2, 3, 4, 5, 6].map((item, i) => {
             return (
               <div
+                key={i}
                 className={
                   '"w-[100%] min-h-[450px] relative border-b-2  pb-[44.5px] mb-[50px]"'
                 }
@@ -221,9 +222,9 @@ export default function Influasity() {
           })}
         </>
       ) : influencity?.length > 0 ? (
-        influencity?.map((item) => {
+        influencity?.map((item, i) => {
           return (
-            <div>
+            <div key={i}>
               {mediaModal()}
               {/* {AudioModal()} */}
               <div className="mt-[90.8px]">
@@ -246,9 +247,10 @@ export default function Influasity() {
                   <div className="grid xs:grid-cols-1  sm:grid-cols-2 md:grid-cols-3 grid-cols-5 gap-x-[24px]">
                     {loading ? (
                       <>
-                        {[1, 2, 3, 4, 5, 6].map((item) => {
+                        {[1, 2, 3, 4, 5, 6].map((item, i) => {
                           return (
                             <div
+                              key={i}
                               className={
                                 '"w-[100%] min-h-[450px] relative border-b-2  pb-[44.5px] mb-[50px]"'
                               }
@@ -291,9 +293,10 @@ export default function Influasity() {
                 </div>
               </div>
               <div className="flex justify-end items-center gap-[12px]">
-                {page.map((item) => {
+                {page.map((item, i) => {
                   return (
                     <div
+                      key={i}
                       className={`h-[36px] w-[36px] flex items-center justify-center rounded-[11px] border-[1px] ${
                         item == selectedPage
                           ? "border-primary text-primary"

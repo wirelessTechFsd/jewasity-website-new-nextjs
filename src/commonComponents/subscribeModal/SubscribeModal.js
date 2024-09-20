@@ -15,7 +15,8 @@ const SubscribeModal = ({ isOpen, onClose }) => {
     email,
     setError,
     setEmail,
-    consent, setConsent
+    consent,
+    setConsent,
   } = useSubscription(isOpen);
   useEffect(() => {
     if (!loading) {
@@ -96,7 +97,8 @@ const SubscribeModal = ({ isOpen, onClose }) => {
                     <label htmlFor="consent" className="text-[16px]">
                       By providing your phone number, you consent to receive SMS
                       news updates from Jewasity. Message and data rates may
-                      apply. You can unsubscribe at any time by replying 'STOP'
+                      apply. You can unsubscribe at any time by replying
+                      {/* 'STOP' */}
                       to opt out.
                     </label>
                   </div>

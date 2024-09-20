@@ -290,7 +290,7 @@ export default function Peeks() {
   ]);
   return (
     <div>
-      <SEO title={"Peeks"}/>
+      <SEO title={"Peeks"} />
       <div className="mt-12 overflow-x-hidden">
         {mediaModal()}
         <div className="flex items-center gap-[14px] mb-[33px]">
@@ -305,9 +305,10 @@ export default function Peeks() {
         <div className="mt-[28px] grid xs:grid-cols-1  sm:grid-cols-2 md:grid-cols-3 grid-cols-6 gap-x-[33.2px]">
           {loading ? (
             <>
-              {[1, 2, 3, 4, 5, 6].map((item) => {
+              {[1, 2, 3, 4, 5, 6].map((item, index) => {
                 return (
                   <div
+                    key={index}
                     className={
                       '"w-[100%] min-h-[450px] relative border-b-2  pb-[44.5px] mb-[50px]"'
                     }
