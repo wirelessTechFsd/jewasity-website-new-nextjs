@@ -8,12 +8,20 @@ export const axiosHandler = async (
 ) => {
   try {
     if (!token) {
-      token = localStorage.getItem("u-enypt-token") || "";
+      if (typeof window !== "undefined") {
+        token = localStorage.getItem("u-enypt-token") || "";
+      }
     }
-    if (endpoint == "video/cut-thumbnail-video" ||endpoint == "video/compress-video" || endpoint=='video/upload-image-user') {
-      axiosInstance.defaults.headers["Content-Type"] = "multipart/form-data; charset=UTF-8";
+    if (
+      endpoint == "video/cut-thumbnail-video" ||
+      endpoint == "video/compress-video" ||
+      endpoint == "video/upload-image-user"
+    ) {
+      axiosInstance.defaults.headers["Content-Type"] =
+        "multipart/form-data; charset=UTF-8";
     } else {
-      axiosInstance.defaults.headers["Content-Type"] = "application/json; charset=UTF-8";
+      axiosInstance.defaults.headers["Content-Type"] =
+        "application/json; charset=UTF-8";
     }
     if (token) {
       axiosInstance.defaults.headers["Authorization"] = `Bearer ${token}`;
@@ -27,7 +35,6 @@ export const axiosHandler = async (
     });
     return response;
   } catch (error) {
-
     throw error;
   }
 };

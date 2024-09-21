@@ -1,9 +1,8 @@
-
 import { useCallback, useEffect, useRef, useState } from "react";
 import UseWindowDimensions from "../../utils/getWindowDimensions";
 import { SERVER_URL } from "../../config/axiosConfig";
 
-export const useMusicMediaModal = (modalShow, videosList,playingMusic) => {
+export const useMusicMediaModal = (modalShow, videosList, playingMusic) => {
   const { width, height } = UseWindowDimensions();
   const playerRef = useRef(null);
   const swiperRef = useRef(null);
@@ -125,7 +124,9 @@ export const useMusicMediaModal = (modalShow, videosList,playingMusic) => {
     setVideoProgress(newProgress);
   }, []);
   const handleDownload = () => {
-    const videoName = playingMusic?.waterMarkVideoUrl?.split("com/")[1] ||  playingMusic?.videoUrl?.split("com/")[1];
+    const videoName =
+      playingMusic?.waterMarkVideoUrl?.split("com/")[1] ||
+      playingMusic?.videoUrl?.split("com/")[1];
     window.open(`${SERVER_URL}/v1/video/download-video/${videoName}`, "_blank");
   };
   const handleProgressClick = (event) => {

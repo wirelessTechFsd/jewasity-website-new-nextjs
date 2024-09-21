@@ -22,9 +22,14 @@ export const useMediaModal = (
   const [isMuted, setIsMuted] = useState(true);
   // const [activeIndex, setActiveIndex] = useState(null);
   const [videoProgress, setVideoProgress] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(
-    localStorage.getItem("video-watched") ? true : false
-  );
+  const [isPlaying, setIsPlaying] = useState(false);
+  useEffect(() => {
+    // Check if window is defined (client-side only)
+    if (typeof window !== "undefined") {
+      const videoWatched = localStorage.getItem("video-watched") ? true : false;
+      setIsPlaying(videoWatched);
+    }
+  }, []);
   const [loading, setLoading] = useState(false);
   const [activeVideo, setActiveVideo] = useState("");
   const [sliderDimensions, setSliderDimensions] = useState({
@@ -153,7 +158,7 @@ export const useMediaModal = (
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [handleNextSlide, handlePrevSlide]); 
+  }, [handleNextSlide, handlePrevSlide]);
   const handleSwipe = useCallback(
     (direction) => {
       if (swiperRef.current?.swiper) {
@@ -184,9 +189,9 @@ export const useMediaModal = (
         } else if (direction === "down" && activeIndex < videoLength?.max) {
           setVideoProgress(0);
           if (featuredArray?.length) {
-            setActiveIndex((prevIndex) => prevIndex + 1); 
+            setActiveIndex((prevIndex) => prevIndex + 1);
           }
-         // Decrement activeIndex
+          // Decrement activeIndex
           setLoading(true);
           setIsPlaying(true);
           setActiveVideo(playerRef?.current?.props?.url?.split("com/")[1]);

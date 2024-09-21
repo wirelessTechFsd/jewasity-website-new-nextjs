@@ -376,8 +376,11 @@ const VideoOverlayComponent = ({
   }, [isFeatured]);
 
   const handleVideoWatch = () => {
-    localStorage.setItem("video-watched", true);
-    setIsPlaying(true);
+    // Ensure this only runs in the browser
+    if (typeof window !== "undefined") {
+      localStorage.setItem("video-watched", true);
+      setIsPlaying(true);
+    }
   };
 
   const icons = [

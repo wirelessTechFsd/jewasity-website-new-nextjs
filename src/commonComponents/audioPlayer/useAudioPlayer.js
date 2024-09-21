@@ -1,7 +1,7 @@
-// import UseWindowDimensions from "../../utils/getWindowDimensions";
+import UseWindowDimensions from "../../utils/getWindowDimensions";
 
 // export const useAudioPlayer = () => {
-//   const { width, height } = UseWindowDimensions();
+//    const { width, height } = UseWindowDimensions();
 //   const videoWidth = width < 768 ? width : 637;
 
 //   const calculateVideoHeight = (width, height) => {
@@ -22,7 +22,6 @@
 //   };
 // };
 import { useCallback, useEffect, useRef, useState } from "react";
-import UseWindowDimensions from "../../utils/getWindowDimensions";
 import { SERVER_URL } from "../../config/axiosConfig";
 
 export const useAudioPlayer = (modalShow, videosList) => {
@@ -218,4 +217,3 @@ export const useAudioPlayer = (modalShow, videosList) => {
     videoContainerRef,
   };
 };
-
